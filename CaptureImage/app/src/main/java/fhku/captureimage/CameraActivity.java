@@ -78,7 +78,7 @@ public class CameraActivity extends AppCompatActivity {
     public void bindPreview(ProcessCameraProvider provider) {
         Preview preview = new Preview.Builder().build();
 
-        ImageCapture imageCapture = new ImageCapture.Builder()
+        imageCapture = new ImageCapture.Builder()
             .setTargetRotation(previewView.getDisplay().getRotation())
             .build();
 
