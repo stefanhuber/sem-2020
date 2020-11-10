@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Thread 1"
+        app:layout_constraintBottom_toTopOf="@+id/start_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_0" />
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/start_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/start_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Async Task"
+        app:layout_constraintBottom_toTopOf="@+id/start_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_2" />
+
+    <Button
+        android:id="@+id/start_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Thread 2"
+        app:layout_constraintBottom_toTopOf="@+id/start_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_1" />
+
+    <Button
+        android:id="@+id/start_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create ANR"
+        app:layout_constraintBottom_toTopOf="@+id/start_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_1" />
+
+    <Button
+        android:id="@+id/start_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trigger Large Download"
+        app:layout_constraintBottom_toTopOf="@+id/start_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_3" />
+
+    <Button
+        android:id="@+id/start_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Worker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
